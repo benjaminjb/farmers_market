@@ -31,6 +31,7 @@ def run_commands(user_input, customer_basket):
     elif action == "sum":
         pass
     print_basket(customer_basket)
+    return customer_basket
 
 def error_message():
     print("\nPlease enter a recognized command:{}".format(commands))
@@ -43,7 +44,7 @@ if __name__ == "__main__":
         user_input = raw_input("\nEnter command: ")
         if user_input == "checkout":
             break
-        run_commands(user_input, customer_basket)
+        customer_basket = run_commands(user_input, customer_basket)
 
 # Note: if we wanted the checkout system to allow for interruptions, we could alternatively
 # run_commands(sys.argv[1:]) to get commands directly from the command line,
