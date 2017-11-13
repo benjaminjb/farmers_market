@@ -30,7 +30,7 @@ def decide_discounts(basket_amounts):
                 if not comparator[rule["comparator"]](counter[rule["items"]], rule["quantity"]):
                     discount_flag = False
             if discount_flag:
-                pared_discount = (discount["name"], discount["credit"], discount["apply_to"])
+                pared_discount = (discount["code"], discount["credit"], discount["apply_to"])
                 if discount.get("special") == "each":
                     applicable_discounts[pared_discount] = counter[rule["items"]]
                     discount_flag = False

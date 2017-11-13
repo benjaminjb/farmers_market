@@ -2,7 +2,7 @@ from products import products
 
 discount_list = [
     {
-        "name": "APOM",
+        "code": "APOM",
         "rules": [
             {
                 "items": (products["oatmeal"]["code"], products["oatmeal"]["price"]),
@@ -19,7 +19,7 @@ discount_list = [
         "apply_to": "AP1"
     },
     {
-        "name": "APPL",
+        "code": "APPL",
         "rules": [
             {
                 "items": (products["apples"]["code"], products["apples"]["price"]),
@@ -32,7 +32,7 @@ discount_list = [
         "special": "each"
     },
     {
-        "name": "BOGO",
+        "code": "BOGO",
         "rules": [
             {
                 "items": (products["coffee"]["code"], products["coffee"]["price"]),
@@ -44,7 +44,7 @@ discount_list = [
         "apply_to": "CF1"
     },
     {
-        "name": "CHMK",
+        "code": "CHMK",
         "rules": [
             {
                 "items": (products["chai"]["code"], products["chai"]["price"]),
