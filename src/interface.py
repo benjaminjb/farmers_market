@@ -1,3 +1,4 @@
+import sys
 from basket import Basket
 from interface_helper_functions import *
 
@@ -38,10 +39,11 @@ def error_message():
 
 
 if __name__ == "__main__":
+    input_operator = input if sys.version_info.major == 3 else raw_input
     print("\nPlease enter one of the following commands:{}".format(commands))
     customer_basket = Basket()
     while True:
-        user_input = input("\nEnter command: ")
+        user_input = input_operator("\nEnter command: ")
         if user_input == "checkout":
             break
         customer_basket = run_commands(user_input, customer_basket)
