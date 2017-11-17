@@ -1,6 +1,9 @@
 # Farmers Market Checkout System
 A checkout system to order items and apply discounts.
 
+### Requirements
+The Farmers Market Checkout system was designed to be used with Python 3, but should be runnable in a Python 2 environment.
+
 ### Running the program
 Outside a container:
 ```bash
